@@ -17,8 +17,11 @@ body{
 }
 
 #title{
-	height: 60px;
-	padding-left: 10px;
+	height: 300px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 0px;
 }
 
 #mainImg{
@@ -34,7 +37,7 @@ body{
 	width: 100%;
 	position:absolute;
 	right: 0px;
-	top: 200px;
+	top: 320px;
 }
 .navBar li{
 	float:left;
@@ -44,6 +47,8 @@ body{
 	margin: 0px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	box-sizing: border-box;
 }
 .navBar li:hover{
 	background: #BEC5DD;
