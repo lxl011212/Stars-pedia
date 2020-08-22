@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!--Name: Steven Liu, Catherine Wu, Abigail Xu, Joe Wang
+	Date: Aug 23, 2020-->
+<meta charset=utf-8 />
+	<title>Random Site</title>
+	<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div class = cont>
+		<!-- ----------------------------------------1st Question -------------------------------------------
+		Question 1:  The user will enter two numbers and click a button to show the result of the indicated 
+		calculation.  (Hint remember parseInt().)  ------------------------------------------------------ -->
+  <nav>
+			<ul class = navBar>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Credit</a></li>
+			</ul>
+		</nav>
+
+  <script>
+			var x;
+			var y;
+
+			function Multiply(){
+				x=document.getElementById("Num1Box").value;
+				y=document.getElementById("Num2Box").value;
+				document.getElementById("Result").innerHTML ="Result: ";
+				document.getElementById("Result").innerHTML += parseInt(x)*parseInt(y);
+			}
+
+			function Divide(){
+				x=document.getElementById("Num1Box").value;
+				y=document.getElementById("Num2Box").value;
+				document.getElementById("Result").innerHTML ="Result: ";
+				document.getElementById("Result").innerHTML += parseInt(x)/parseInt(y);
+			}
+
+			function Add(){
+				x=document.getElementById("Num1Box").value;
+				y=document.getElementById("Num2Box").value;
+				document.getElementById("Result").innerHTML ="Result: ";
+				document.getElementById("Result").innerHTML += parseInt(x)+parseInt(y);
+			}
+
+			function Subtract(){
+				x=document.getElementById("Num1Box").value;
+				y=document.getElementById("Num2Box").value;
+				document.getElementById("Result").innerHTML ="Result: ";
+				document.getElementById("Result").innerHTML += parseInt(x)-parseInt(y);
+			}
+		</script>
+
+
+		<!-- Keep the "body" of Question 1 beneath here ---------------------------------------- -->
+			<h1 id = mainTitle><img id="title" src="/Users/abigail/Desktop/CS/html/web1/img/1092.png" alt="Title"></h1>
+			
+			<div id = mainImg></div>
+			
+  <h3>Question 1</h3>
+			<br>
+			1st Number: <input type="text" id="Num1Box">
+			<br>
+			2nd Number: <input type="text" id="Num2Box">
+			<br>
+
+			<button onclick="Multiply()">Multiply</button>
+			<button onclick="Divide()">Divide</button>
+			<button onclick="Add()">Add</button>
+			<button onclick="Subtract()">Subtract</button>
+			<br>
+			<div id="Result">Result:</div>
+
+			<br>
+			<br>
+
+
+			<!-- ----------------------------------------2nd Question -------------------------------------------
+		Question 2:  The use will enter two numbers and click a button show state which number is the largest. -->
+
+
+
+
+		<script>
+		//WRITE ALL OF YOUR JAVASCRIPT AND FUNCTIONS FOR QUESTION 2 HERE!!!!!!!!!!  ----------------------
+			var x;
+			var y;
+
+			function Max(){
+				x=document.getElementById("Num3Box").value;
+				y=document.getElementById("Num4Box").value;
+				if (parseInt(x)>= parseInt(y)){
+					document.getElementById("Result2").innerHTML= "The larger number is: " +x;
+				}
+				else {
+					document.getElementById("Result2").innerHTML= "The larger number is: " +y;
+				}
+			}
+		</script>
+
+
+		<!-- Keep the "body" of Question 2 beneath here ------------------------------------ -->
+			<h1>Question 2</h1>
+			<br>
+
+			1st Number: <input type="text" id="Num3Box">
+			<br>
+			2nd Number: <input type="text" id="Num4Box">
+			<br>
+			<button onclick="Max()">Find the Max</button>
+			<div id="Result2"> The larger number is: </div>
+			<br>
+			<br>
+
+
+
+		<!-- ----------------------------------------3rd Question -------------------------------------------
+		Question 3:  Currently the font is normal, 10 pt and the background color is yellow.  Clicking the 
+		button will change the font to italicised, xx-large and with a red background. If the button is 
+		clicked once more it will return to it's original state (yellow background, etc.). -->
+
+
+
+		<script>
+		//WRITE ALL OF YOUR JAVASCRIPT AND FUNCTIONS FOR QUESTION 3 HERE!!!!!!!!!!  ----------------------
+			function Change(){
+				if(document.getElementById("Q3").style.backgroundColor=="yellow"){
+					document.getElementById("Q3").style.backgroundColor ="red";
+					document.getElementById("Q3").style.fontSize ="xx-large";
+					document.getElementById("Q3").style.fontStyle ="italic";
+					}
+				else {
+					document.getElementById("Q3").style.backgroundColor ="yellow";
+					document.getElementById("Q3").style.fontSize ="10pt";
+					document.getElementById("Q3").style.fontStyle ="normal";
+				}
+			}
+
+		</script>
+
+
+		<!-- Keep the "body" of Question 3 beneath here ------------------------------------ -->
+			<h1>Question 3</h1>
+			<br>
+			<div id="Q3" style="font-size:10pt; background-color:yellow; " >Here is some text.</div>
+			<button onclick="Change()">Change Text and Color</button>
+		</div>
+</body>
+
+
+
+</html>
+
+

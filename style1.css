@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin: 0px;
+}
+
+body{
+	margin:0px;
+	background: #CA9B80
+}
+
+#mainTitle{
+	color: beige;
+	background-color: #9C5D41;
+}
+
+#title{
+	height: 60px;
+	padding-left: 10px;
+}
+
+#mainImg{
+	background-image: url("img/studying-home.jpg");
+	height: 500px;
+	backgroung-position: top;
+	background-size: cover;
+}
+
+.navBar{
+	list-style:none;
+	text-align: center; 
+	width: 100%;
+	position:absolute;
+	right: 0px;
+	top: 53px;
+}
+.navBar li{
+	float:left;
+	width: 33.33%;
+	color: #9C5D41;
+	background: beige;
+	margin: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.navBar li:hover{
+	background: #9C5D41;
+}
+.navBar a:hover{
+	color: beige;
+}
+.navBar a{
+	color: #9C5D41;
+	text-decoration: none;
+	display: block;
+}
+
+	
