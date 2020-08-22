@@ -11,7 +11,7 @@ body{
 	background-size: 100%;
 }
 
-#title{
+#title2{
 	height: 300px;
 	display:block;
 	margin-left:auto;
@@ -19,7 +19,7 @@ body{
 	margin-top: 0px;
 }
 
-.navBar{
+.navBar2{
 	list-style:none;
 	text-align: center; 
 	width: 100%;
@@ -27,27 +27,26 @@ body{
 	right: 0px;
 	top: 320px;
 }
-.navBar li{
+.navBar2 li{
 	float:left;
 	width: 33.33%;
-	background: black;
 	font-size: 20px;
-	margin: 0px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	box-sizing: border-box;
 }
-.navBar li:hover{
+.navBar2 a:hover{
+	color: black;
 	background: #BEC5DD;
 }
-.navBar a:hover{
-	color: black;
-}
-.navBar a{
+.navBar2 a{
 	color: #BEC5DD;
+		background: black;
 	text-decoration: none;
 	display: block;
+	padding: 10px;
 }
 
-	
+/*--above are duplicated--*/
+
