@@ -7,7 +7,8 @@
 
 body{
 	margin:0px;
-	background: #CA9B80
+	background-image: url("../img/pexels-adrien-olichon-2538107.jpg");
+	background-size: 100%;
 }
 
 #mainTitle{
@@ -33,25 +34,25 @@ body{
 	width: 100%;
 	position:absolute;
 	right: 0px;
-	top: 53px;
+	top: 200px;
 }
 .navBar li{
 	float:left;
 	width: 33.33%;
-	color: #9C5D41;
-	background: beige;
+	background: black;
+	font-size: 20px;
 	margin: 0px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
 .navBar li:hover{
-	background: #9C5D41;
+	background: #BEC5DD;
 }
 .navBar a:hover{
-	color: beige;
+	color: black;
 }
 .navBar a{
-	color: #9C5D41;
+	color: #BEC5DD;
 	text-decoration: none;
 	display: block;
 }
