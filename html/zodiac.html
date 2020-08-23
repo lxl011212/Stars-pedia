@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 3px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<h2>Discover Your Daily Fortune</h2>
+
+<table style="width:100%">
+  <tr>
+      <th>Zodiac Sign</th>
+       <th>Constellation</th>
+      <th>English Name</th>
+      <th>Dates</th>
+      <th>Element</th>
+  </tr>
+  
+    
+    <tr>
+        
+        <td><span style='font-size:50px;'onclick='document.getElementById("fortuneteller").innerHTML = fortuneTell(1)'>&#9800;</span></td>
+       <td>Aries</td>
+      <td>The Ram</td>
+      <td>Mar. 21 - Apr. 19</td>
+      <td>Fire</td>
+  </tr>
+    
+    
+    <tr>
+      <td><span style='font-size:50px;'onclick='document.getElementById("fortuneteller").innerHTML = fortuneTell(2)'>&#9801;</span></td>
+       <td>Taurus</td>
+      <td>The Bull</td>
+      <td>Apr. 20 - May. 20</td>
+      <td>Earth</td>
+  </tr>
+    
+    
+    <tr>
+      <td><span style='font-size:50px;'onclick='document.getElementById("fortuneteller").innerHTML = fortuneTell(3)'>&#9802;</span></td>
+       <td>Gemini</td>
+      <td>The Twins</td>
+      <td>May 21 - Jun. 21</td>
+      <td>Air</td>
+  </tr>
+    
+    
+    <tr>
+      <td><span style='font-size:50px;'onclick='document.getElementById("fortuneteller").innerHTML = fortuneTell(4)'>&#9803;</span></td>
+       <td>Cancer</td>
+      <td>The Crab</td>
+      <td>Jun. 22 - July 22</td>
+      <td>Water</td>
+  </tr>
+    
+    
+    <tr>
+      <td><span style='font-size:50px;'onclick='document.getElementById("fortuneteller").innerHTML = fortuneTell(5)'>&#9804;</span></td>
+       <td>Leo</td>
+      <td>The Lion</td>
+      <td>July 23 - Aug. 22</td>
+      <td>Fire</td>
+  </tr>
+    
+    
+    <tr>
+      <td><span style='font-size:50px;'onclick='document.getElementById("fortuneteller").innerHTML = fortuneTell(6)'>&#9805;</span></td>
+       <td>Virgo</td>
+      <td>The Virgin</td>
+      <td>Aug. 23 - Sep. 22</td>
+      <td>Earth</td>
+  </tr>
+    
+    
+    <tr>
+      <td><span style='font-size:50px;'onclick='document.getElementById("fortuneteller").innerHTML = fortuneTell(7)'>&#9806;</span></td>
+       <td>Libra</td>
+      <td>The Balance</td>
+      <td>Sep. 23 - Oct. 23</td>
+      <td>Air</td>
+  </tr>
+    
+    
+    <tr>
+      <td><span style='font-size:50px;'onclick='document.getElementById("fortuneteller").innerHTML = fortuneTell(8)'>&#9807;</span></td>
+       <td>Scorpio</td>
+      <td>The Scorpion</td>
+      <td>Oct. 24 - Nov. 21</td>
+      <td>Water</td>
+  </tr>
+    
+    
+    <tr>
+      <td><span style='font-size:50px;'onclick='document.getElementById("fortuneteller").innerHTML = fortuneTell(9)'>&#9808;</span></td>
+       <td>Sagittarius</td>
+      <td>The Archer</td>
+      <td>Nov. 22 - Dec. 21</td>
+      <td>Fire</td>
+  </tr>
+    
+    
+    <tr>
+      <td><span style='font-size:50px;'onclick='document.getElementById("fortuneteller").innerHTML = fortuneTell(10)'>&#9809;</span></td>
+       <td>Capricorn</td>
+      <td>The Goat</td>
+      <td>Dec. 22 - Jan. 19</td>
+      <td>Earth</td>
+  </tr>
+    
+    
+      
+  <tr>
+      <td><span style='font-size:50px;'onclick='document.getElementById("fortuneteller").innerHTML = fortuneTell(11)'>&#9810;</span></td>
+       <td>Aquarius</td>
+      <td>The Water Bearer</td>
+      <td>Jan. 20 - Feb. 18</td>
+      <td>Air</td>
+  </tr>
+    
+    <tr>
+      <td><span style='font-size:50px;'onclick='document.getElementById("fortuneteller").innerHTML = fortuneTell(12)'>&#9811;</span></td>
+       <td>Pisces</td>
+      <td>The Fishes</td>
+      <td>Feb. 19 - Mar. 20</td>
+      <td>Water</td>
+  </tr>
+    
+    
+</table>
+    
+    <p id="fortuneteller">Click on your Zodiac sign to find out your daily fortune.</p>
+    
+    
+     <button type="button" onclick='document.getElementById("fortuneteller").innerHTML = "Click on your Zodiac sign to find out your daily fortune."'>Reset</button>
+    
+    <p>For entertainment purposes only.</p>
+    
+    
+    
+    <script>
+        
+        
+        const sentences = ["There's an extra spark in your eye that people won't be able to ignore.",
+                             "Speak with confidence and you'll go far. It's important for you to say what you feel.",
+                             
+                             "You may find that adjustments need to be made in your own plan. Don't worry if things don't go according to your plans.",
+                             
+                             "Get to the core of a matter that seriously interests you. Now is a good time to focus on yourself.",
+                             
+                             "Today is your day, so live it up!",
+                             
+                             "Feel free to be your usual jolly self.",
+                             
+                             "Bring things up to your level and you'll find that others willingly join you there.",
+                             
+                             "You could find that you're slowly taking on the traits of the people you despise.",
+                             
+                             "If you continue to see the negative side of everything, it's likely that other people will only see the negative side of you.",
+                            
+                            "This is the time to be adventurous and explore.",
+                             
+                             "Don't be afraid to express your opinions.",
+                             
+                             "It could be hard to make decisions, but not impossible.",
+                             
+                             "You have the ability to transform and conquer anything now.",
+                             
+                             "You could feel you don't have enough facts to make an educated decision about what to do next.",
+                             
+                             "Escapism is only a temporary remedy.",
+                             
+                             "Attend to your feelings and spend time alone if it helps you get more in tune with your emotions.",
+                             
+                             "You'll find a great deal of power and dynamism in the air urging you to take the adventurous route.",
+                             
+                             "Don't even worry about consequences now. Your good luck will pull you safely through.",
+                             
+                             "Be proud and courageous.",
+                             
+                             "You have the power to turn an unhealthy situation into a positive one, but first you must get rid of all self-doubt.",
+                    
+                             
+                             "If you don't have confidence in yourself, it will be hard for others to have confidence in you.",
+                             
+                             "Make allies, not enemies, and you'll find that you will have nothing to fear.",
+                             
+                             "Freedom is important, but make sure that others don't interpret it as you not caring about a person or situation that's actually quite meaningful to you.",
+                             
+                             "Let your heart speak openly and honestly.",
+                             
+                             "You may find that other people openly object to your actions. It's OK to be a bit selfish if the situation is appropriate.",
+                             
+                             "Feel free to speak more loudly today!",
+                             
+                             "You'll find your ego is healthy, charged, and ready for the battlefield.",
+                             
+                             "Stay true to yourself above all else.",
+                             
+                             "Don't underestimate the power of your words.",
+                             
+                             "Stay optimistic and remember that you were put here for a reason.",
+                             
+                             
+                             "There's no need to hold anything back.",
+                             
+                             "Your intuition is likely to be very keen today.",
+                             
+                             "You'll probably be very busy and happy with whatever results you produce.",
+                             
+                             "You could tire yourself out, so be sure to take occasional breaks, and certainly don't forget to eat.",
+                             
+                             "Today you might learn about new and creative ways to increase your income, possibly involving technology in some way.",
+                             
+                             "Social events could put you in touch with interesting people in intriguing professions.",
+                             
+                             "Be sure you take breaks and rest your eyes from time to time to avoid eyestrain and headaches today.",
+                             
+                             "Your mind will be quick, insightful, and inspired.",
+                             
+                             "It might be a good idea to take a walk or get some other form of exercise or else you might not be able to sleep.",
+                             
+                             "Most of what you learn should be positive and exciting, although some things may be confusing.",
+                             
+                             "This is a great day to enjoy the evening, perhaps watching an online concert, play, or movie."
+                            
+                            ];
+        
+        function fortuneTell(element){
+            
+            var d = new Date();
+            var ft = "";
+            var ran = 7*Math.abs((d.getMonth()+1) *(element)*(d.getDay()-element)*(d.getMonth()+1));
+        
+            var flag = [];
+            for (i = 0; i < 3; i++) {
+                flag[i] = (ran % 41) | 0;
+                
+                if (i == 1 && flag[1] == flag[0]){
+                    flag[1]++;
+                    flag[1] %= 41;
+                }
+                
+                if (i == 2 && flag[1] == flag[2]){
+                    flag[2]++;
+                    flag[2] %= 41;
+                    if (flag[2] == flag[0]){
+                        flag[2]++;
+                        flag[2] %= 41;
+                    }
+                }
+                
+                flag[i] = flag[i] | 0;
+                
+                ft += sentences[flag[i]] + " ";
+                ran /= 5;
+            }
+            
+            return ft;
+        }
+        
+    </script>
+
+</body>
+</html>
