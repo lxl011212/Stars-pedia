@@ -59,7 +59,7 @@ ul li:hover ul li {
 	height: justify;
     padding: 5px;
 	position: relative;
-	background: url('../Images/backgroundz.jpg');
+	background: url('../img/backgroundz.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
