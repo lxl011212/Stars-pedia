@@ -1,17 +1,18 @@
 @charset "UTF-8";
 /* CSS Document */
 
-*{
-	margin: 0px;
+.container{
+	position:relative;
+	height:2900px;
 }
 
 body{
 	margin:0px;
 	background-image: url("../img/pexels-adrien-olichon-2538107.jpg");
-	background-size: 100%;
+	background-size:100%;
 }
 
-#title2{
+#title{
 	height: 300px;
 	display:block;
 	margin-left:auto;
@@ -19,7 +20,7 @@ body{
 	margin-top: 0px;
 }
 
-.navBar2{
+.navBar{
 	list-style:none;
 	text-align: center; 
 	width: 100%;
@@ -27,7 +28,7 @@ body{
 	right: 0px;
 	top: 320px;
 }
-.navBar2 li{
+.navBar li{
 	float:left;
 	width: 33.33%;
 	font-size: 20px;
@@ -36,11 +37,12 @@ body{
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	box-sizing: border-box;
 }
-.navBar2 a:hover{
+
+.navBar a:hover{
 	color: black;
 	background: #BEC5DD;
 }
-.navBar2 a{
+.navBar a{
 	color: #BEC5DD;
 		background: black;
 	text-decoration: none;
@@ -48,5 +50,27 @@ body{
 	padding: 10px;
 }
 
-/*--above are duplicated--*/
+.fix img{
+	height: 50px;
+	position: fixed;
+	right: 40px;
+	bottom: 60px;
+}
 
+.fix img:hover{
+	transform:scale(1.5);
+}
+
+.footer{
+	color:azure;
+	background: black;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	text-align:center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	padding-top:15px;
+	padding-bottom: 20px;
+}
+
+	

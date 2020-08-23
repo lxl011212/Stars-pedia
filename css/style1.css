@@ -1,14 +1,15 @@
 @charset "UTF-8";
 /* CSS Document */
 
-*{
-	margin: 0px;
+.container{
+	position:relative;
+	height:2900px;
 }
 
 body{
 	margin:0px;
 	background-image: url("../img/pexels-adrien-olichon-2538107.jpg");
-	background-size: 100%;
+	background-size:100%;
 }
 
 #title{
@@ -30,24 +31,130 @@ body{
 .navBar li{
 	float:left;
 	width: 33.33%;
-	background: black;
 	font-size: 20px;
-	margin: 0px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	box-sizing: border-box;
 }
-.navBar li:hover{
-	background: #BEC5DD;
-}
+
 .navBar a:hover{
 	color: black;
+	background: #BEC5DD;
 }
 .navBar a{
 	color: #BEC5DD;
+		background: black;
 	text-decoration: none;
 	display: block;
+	padding: 10px;
 }
+
+.cont1 img{
+	height: 550px;
+	position: absolute;
+	top: 550px;
+	left:-125px;
+	border-radius: 500px;
+}
+
+.cont1 h1{
+	opacity: 0;
+	position: absolute;
+	top: 800px;
+	left: 200px;
+	color: azure;
+	font-size: 40px;
+}
+
+.cont1:hover img{
+	opacity: 0.3;
+}
+
+.cont1:hover h1{
+	opacity: 1;
+}
+
+.cont2 img{
+	height: 650px;
+	position: absolute;
+	top: 1030px;
+	right: 0px;
+	opacity:0.9;
+	border-radius: 100px;
+}
+
+.cont2 h1{
+	opacity: 0;
+	position: absolute;
+	top: 1300px;
+	right: 100px;
+	color: azure;
+	font-size: 40px;
+}
+
+.cont2:hover img{
+	opacity: 0.3;
+}
+
+.cont2:hover h1{
+	opacity: 1;
+}
+
+.cont3 img{
+	height: 560px;
+	position: absolute;
+	top: 1500px;
+	left:-50px;
+	border-radius: 300px;
+}
+
+.cont3 h1{
+	opacity: 0;
+	position: absolute;
+	top: 1740px;
+	left: 280px;
+	color: azure;
+	font-size: 40px;
+}
+
+.cont3:hover img{
+	opacity: 0.3;
+}
+
+.cont3:hover h1{
+	opacity: 1;
+}
+
+.fix img{
+	height: 50px;
+	position: fixed;
+	right: 40px;
+	bottom: 60px;
+}
+
+.fix img:hover{
+	transform:scale(1.5);
+}
+
+.contF{
+	
+}
+
+.footer{
+	color:azure;
+	background: black;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	text-align:center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	padding-top:15px;
+	padding-bottom: 20px;
+}
+
+	
+
+
 
 	
