@@ -50,6 +50,28 @@ body{
 	padding: 10px;
 }
 
+.clearfix {
+  overflow: auto;
+}
+
+.cont {
+	color: azure;
+	text-align: center;
+	width: 70%;
+	padding: 10px 20px;
+	font-size: 110%;
+	line-height: 2.5em;
+	position: sticky;
+	top: 250px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"; 
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 300px;
+}
+.cont ul{
+	list-style: none;
+}
+
 .fix img{
 	height: 50px;
 	position: fixed;
