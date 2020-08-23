@@ -3,13 +3,31 @@
 
 .container{
 	position:relative;
-	height:3700px;
+	height:2000px;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 3px;
+  text-align: left;
 }
 
 body{
 	margin:0px;
 	background-image: url("../img/pexels-adrien-olichon-2538107.jpg");
 	background-size:100%;
+}
+
+.container{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto; 
+	margin-top: 250px;
+	color:azure;
 }
 
 #title{
@@ -50,81 +68,10 @@ body{
 	padding: 10px;
 }
 
-.cont1 img{
-	height: 550px;
-	position: absolute;
-	top: 650px;
-	left:-125px;
-	border-radius: 500px;
+.clearfix {
+  overflow: auto;
 }
 
-.cont1 h1{
-	opacity: 0;
-	position: absolute;
-	top: 900px;
-	left: 200px;
-	color: azure;
-	font-size: 40px;
-}
-
-.cont1:hover img{
-	opacity: 0.3;
-}
-
-.cont1:hover h1{
-	opacity: 1;
-}
-
-.cont2 img{
-	height: 650px;
-	position: absolute;
-	top: 1430px;
-	right: 0px;
-	opacity:0.9;
-	border-radius: 100px;
-}
-
-.cont2 h1{
-	opacity: 0;
-	position: absolute;
-	top: 1700px;
-	right: 100px;
-	color: azure;
-	font-size: 40px;
-}
-
-.cont2:hover img{
-	opacity: 0.3;
-}
-
-.cont2:hover h1{
-	opacity: 1;
-}
-
-.cont3 img{
-	height: 560px;
-	position: absolute;
-	top: 2300px;
-	left:-50px;
-	border-radius: 300px;
-}
-
-.cont3 h1{
-	opacity: 0;
-	position: absolute;
-	top: 2540px;
-	left: 230px;
-	color: azure;
-	font-size: 40px;
-}
-
-.cont3:hover img{
-	opacity: 0.3;
-}
-
-.cont3:hover h1{
-	opacity: 1;
-}
 
 .fix img{
 	height: 50px;
@@ -140,7 +87,7 @@ body{
 .footer{
 	color:azure;
 	background: black;
-	position:absolute;
+	position:relative;
 	bottom:0;
 	width:100%;
 	text-align:center;
@@ -148,9 +95,5 @@ body{
 	padding-top:15px;
 	padding-bottom: 20px;
 }
-
-	
-
-
 
 	
