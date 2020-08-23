@@ -68,9 +68,30 @@ body{
 	margin-right:auto;
 	margin-top: 300px;
 }
+
+.cont2 {
+	color: azure;
+	text-align: center;
+	width: 70%;
+	padding: 10px 20px;
+	font-size: 110%;
+	line-height: 2.5em;
+	position: sticky;
+	top: 70px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"; 
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 300px;
+}
+
 .cont ul{
 	list-style: none;
 }
+
+.cont2 ul{
+	list-style: none;
+}
+
 
 .fix img{
 	height: 50px;
